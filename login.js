@@ -16,7 +16,7 @@ const loginWithIG = async() => {
     // After the user logs in and grants permission, they will be redirected back to your website with a code parameter in the URL
     const code =  new URLSearchParams(window.location.search).get('code')
     
-    console.log(code);
+    console.log(window.location.href);
     
     // Use the code to obtain an access token
     // const response = await fetch(`https://api.instagram.com/oauth/access_token`, {
