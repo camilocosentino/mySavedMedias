@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: grid;
+    
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: minmax(800px, 1fr);
+    background-color: beige;
+    width: 100vw;
+    height: 100vh;
+}
+
+#presentationSection{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    place-items: center; 
+    width: 100%;
+    height: 100%;
+}
+
+#presentationSection .title-presentation{
+   position: relative;  
+   place-self: center center;
+   width: 100%;
+   height: 100%;
+} 
+
+
+.title-presentation .bubble{
+    width: 800px;
+ } 
+ .title-presentation h2{
+  margin-left: 5%;
+  font-size: 32px;
+} 
+#presentationSection p{
+    place-self: start center;
+    position: relative;
+    top: 200px;
+    left: 230px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 50px;
+    line-height: 1.8;
+ } 
+ #presentationSection svg{
+  place-self: start center;
+  position: absolute;
+  width: 800px;
+  height: 800px;
+} 
+ #newtworkAuthentication{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+#newtworkAuthentication h3{
+    font-size: 25px;
+    place-self: end center;
+    margin-bottom: 20px;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    color: #f57674;
+}
+ /*Social Media Buttons*/
+ .socialMedia-buttons{
+      
+        place-self: start center;
+ }
+ .socialMedia-buttons a{
+    margin: 20px;
+ }
+ .fa {
+    padding: 19px;
+    font-size: 35px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 10px;
+    
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: beige;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-google {
+    background: #dd4b39;
+    color: beige;
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #125688;
+    color: beige;
+  }
+  .fa-bookmark{
+    color: #f56967;
+  }
