@@ -1,3 +1,4 @@
 server.js
-assets/secrets.js
+/assets/secrets.js
 styleGridExample.css
+/node_modules/
