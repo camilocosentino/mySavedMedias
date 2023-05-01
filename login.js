@@ -2,7 +2,7 @@
 const CLIENT_ID = '1143219719657853'
 const CLIENT_SECRET = "58331ff13d70f0a637ec23d48e9c2333"
 // const REDIRECT_URI = 'https://camilocosentino.github.io/landingpage-asincrona/'
-const REDIRECT_URI = 'http://127.0.0.1:5500/login.html'
+const REDIRECT_URI = 'https://camilocosentino.github.io/mySavedMedias/'
 let accessToken;
 let igButton = document.querySelector(".fa-instagram")
 
@@ -10,7 +10,7 @@ let igButton = document.querySelector(".fa-instagram")
 
 const loginWithIG = async() => {
     // Redirect the user to the Instagram login page
-    window.location.href = 
+     window.location.href = 
     `https://api.instagram.com/oauth/authorize?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&response_type=code&scope=user_profile`;
 
     // After the user logs in and grants permission, they will be redirected back to your website with a code parameter in the URL
