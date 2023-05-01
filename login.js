@@ -9,14 +9,15 @@ let igButton = document.querySelector(".fa-instagram")
 
 
 const loginWithIG = async() => {
+    
     // Redirect the user to the Instagram login page
-     window.location.href = 
+   window.location.href = 
     `https://api.instagram.com/oauth/authorize?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&response_type=code&scope=user_profile`;
-    console.log("volvimo a la web");
+    
     // After the user logs in and grants permission, they will be redirected back to your website with a code parameter in the URL
-    const code =  new URLSearchParams(window.location.search).get('code')
-    console.log(code);
-    console.log(window.location.href);
+    // const code =  new URLSearchParams(window.location.search).get('code')
+    // console.log(code);
+    // console.log(window.location.href);
     
     // Use the code to obtain an access token
     // const response = await fetch(`https://api.instagram.com/oauth/access_token`, {
@@ -38,6 +39,17 @@ const loginWithIG = async() => {
     // accessToken = data.access_token
 
     // console.log(accessToken)
+    // Add a load event listener to the window object
+
+    window.addEventListener('load', () => {
+    
+        const code =  new URLSearchParams(window.location.search).get('code') || "No existe query parameter code"
+        console.log(code);
+        window.history.pushState({}, document.title, "/" + "volvimo a la web code" );
+    });
+
 }
 
 igButton.addEventListener("click", loginWithIG)
+
+
