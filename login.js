@@ -1,5 +1,6 @@
 // Replace CLIENT_ID and REDIRECT_URI with your own values
-
+const CLIENT_ID = '1143219719657853'
+const CLIENT_SECRET = "58331ff13d70f0a637ec23d48e9c2333"
 // const REDIRECT_URI = 'https://camilocosentino.github.io/landingpage-asincrona/'
 const REDIRECT_URI = 'https://camilocosentino.github.io/mySavedMedias/'
 let accessToken;
